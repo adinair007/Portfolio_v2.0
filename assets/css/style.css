@@ -1,0 +1,27 @@
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+.about-me img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    float: right;
+    padding: 20px;
+    border-radius: 50%;
+    height: 200px;
+    width:200px;
+    transition-delay:200ms ;
+}
