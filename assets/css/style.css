@@ -1,27 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins&family=Sacramento&display=swap");
+li {
+  list-style: none;
+}
 
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+}
+
+.Aditya {
+  font-family: "Sacramento";
+  font-size: 30px;
+}
+
+.nav-links{
+    font-family: 'Poppins',sans-serif;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  height: 650px;
+  padding: 100px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/northern-lights.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden-welcome {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 3s;
+}
+.welcome {
+  font-family: "Sacramento", cursive;
+  color: aliceblue;
+  font-size: 100px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
 
 .show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
+.about-me {
+  position: relative;
+  padding: 100px;
+  width: 100vw;
+}
+.about-me h3 {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
-.about-me img{
+.about-me img {
+  display: absolute;
+  float: right;
+  padding: 20px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  transition-delay: 200ms;
+}
+.about-me p {
+  display: absolute;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  transition-delay: 200ms;
+}
+
+.projects {
+  display: grid;
+  padding: 100px;
+  justify-content: space-between;
+}
+
+.projects h3 {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects.work {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.projects.work:nth-child(2) {
+  transition-delay: 200ms;
+}
+.projects.work:nth-child(3) {
+  transition-delay: 300ms;
+}
+.projects.work:nth-child(4) {
+  transition-delay: 400ms;
+}
+.projects.work:nth-child(5) {
+  transition-delay: 500ms;
+}
+.projects.work:nth-child(6) {
+  transition-delay: 600ms;
+}
+.projects.work:hover {
+  box-shadow: inset 0px 0px 8px rgb(77, 170, 237), 0 0 15px rgb(78, 144, 185);
+}
+.contact-me {
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: inline-block;
+  align-items: center;
+}
+
+.contact-me h3 {
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.contact-me p {
+  padding: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fab.fa-linkedin.btn:hover {
+  color: rgb(33, 101, 248);
+}
+.fab.fa-github.btn:hover {
+  color: rgb(137, 52, 221);
+}
+.far.fa-envelope.btn.btn:hover {
+  color: rgb(57, 137, 241);
+}
+.footer {
+  padding: 30px;
+  font-family: "Montserrat";
+  flex-wrap: wrap;
+  font-style: italic;
+  text-align: center;
+  margin-left: auto;
+  color: black;
+}
+
+/* Scroll Properties */
+
+.scoll-down .navbar {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .navbar {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+
+@media screen and (max-device-width: 480px) {
+  header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    float: right;
-    padding: 20px;
-    border-radius: 50%;
-    height: 200px;
-    width:200px;
-    transition-delay:200ms ;
+  }
+
+  header h1 {
+    font-size: 40px !important;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    padding: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 40px !important;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    padding: 3px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 48px !important;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav ul li {
+    padding-left: 25px;
+  }
 }

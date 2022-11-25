@@ -11,6 +11,9 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+const hiddenWelcome = document.querySelectorAll('.hidden-welcome');
+hiddenWelcome.forEach((el) => observer.observe(el));
+
 const body = document.body;
 let lastScroll = 0;
 window.addEventListener('scroll', () => {

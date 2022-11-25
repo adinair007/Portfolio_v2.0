@@ -15,7 +15,6 @@
       src="https://kit.fontawesome.com/8d9a3f074a.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="./assets/js/portfolio.js"></script>
     <title>Portfolio</title>
   </head>
 
@@ -23,7 +22,8 @@
     <header>
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-          <ul class="navbar-nav">
+          <a class="navbar-brand Aditya" href="#home">Aditya Nair</a>
+          <ul class="navbar-nav nav-links">
             <li class="nav-item">
               <a class="nav-link active" href="#about-me">About Me</a>
             </li>
@@ -41,15 +41,14 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-header hidden">
-        <h2>Hey!</h2>
-        <h2>Welcome to my Page!</h2>
+    <section class="hero" id="home">
+      <div class="hero-header hidden-welcome">
+        <h1 class="welcome text-center">Welcome</h1>
       </div>
     </section>
 
     <main>
-      <section id="about-me" class="about-me hidden container mt-3 mb-5">
+      <section id="about-me" class="about-me hidden container">
         <div class="post-heading text-center">
           <h3 class="display-4 font-weight-bold"><b>About Me</b></h3>
           <hr class="w-50 mx-auto pb-0.9" />
@@ -74,7 +73,7 @@
             <!-- card 1 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
-                class="card mx-auto shadow p-3 mb-5 bg-white rounded"
+                class="work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
                 style="width: 20rem"
               >
                 <img
@@ -106,7 +105,7 @@
             <!-- card 2 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
-                class="card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
+                class="work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
                 style="width: 20rem"
               >
                 <img src="./assets/images/Weather.png" class="card-img-top" />
@@ -133,7 +132,7 @@
             <!-- card 3 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
-                class="card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
+                class=" work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
                 style="width: 20rem"
               >
                 <img src="./assets/images/Workday.png" class="card-img-top" />
@@ -160,7 +159,7 @@
             <!-- card 4 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
-                class="card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
+                class="work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
                 style="width: 20rem"
               >
                 <img src="./assets/images/Password.png" class="card-img-top" />
@@ -187,7 +186,7 @@
             <!-- card 5 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
-                class="card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
+                class="work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
                 style="width: 20rem"
               >
                 <div class="card-img-top">
@@ -211,7 +210,7 @@
             <!-- card 6 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
-                class="card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
+                class="work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
                 style="width: 20rem"
               >
                 <img src="./assets/images/JS QUIZ.png" class="card-img-top" />
@@ -243,25 +242,26 @@
           <h3 class="display-4 font-weight-bold">Contact Me</h3>
           <hr class="w-50 mx-auto pb-0.9" />
           <p><i class="fa-solid fa-phone"></i>(469)-724-7966</p>
-          <span class="icons">
+          <div class="icons">
             <a href="https://github.com/adinair007">
-              <i class="fab fa-github btn fa-5x"></i>
+              <i class="fab fa-github btn fa-2x center"></i>
             </a>
             <a href="https://www.linkedin.com/in/adityanair09/">
-              <i class="fab fa-linkedin btn fa-5x"></i>
+              <i class="fab fa-linkedin btn fa-2x center"></i>
             </a>
-
             <a href="mailto:adinair.in@outlook.com">
-              <i class="far fa-envelope btn fa-5x"></i>
+              <i class="far fa-envelope btn fa-2x center"></i>
             </a>
-          </span>
+          </div>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="footer">
         <h5>Made by Aditya Nair</h5>
       </div>
     </footer>
+    <script src="./assets/js/portfolio.js"></script>
   </body>
 </html>
