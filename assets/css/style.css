@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Caveat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+
 li {
   list-style: none;
 }
@@ -19,12 +23,14 @@ li {
 }
 
 .Aditya {
-  font-family: "Sacramento";
+  font-family: "Caveat",cursive;
   font-size: 30px;
 }
 
-.nav-links{
-    font-family: 'Poppins',sans-serif;
+.nav-links {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  justify-content: space-between;
 }
 
 .hero {
@@ -47,7 +53,7 @@ li {
   transition: all 3s;
 }
 .welcome {
-  font-family: "Sacramento", cursive;
+  font-family: "Raleway", sans-serif;
   color: aliceblue;
   font-size: 100px;
 }
@@ -69,6 +75,7 @@ li {
   position: relative;
   padding: 100px;
   width: 100vw;
+  padding-bottom: 100px;
 }
 .about-me h3 {
   font-family: "Poppins", sans-serif;
@@ -95,11 +102,9 @@ li {
   transition-delay: 200ms;
 }
 
-.projects {
-  display: grid;
+/* .projects {
   padding: 100px;
-  justify-content: space-between;
-}
+} */
 
 .projects h3 {
   padding: 10px;
@@ -133,13 +138,15 @@ li {
 }
 .contact-me {
   padding: 50px;
+  padding-top: 100px;
   justify-content: center;
   align-items: center;
 }
 
 .icons {
   display: inline-block;
-  align-items: center;
+  text-align: center;
+  vertical-align: bottom;
 }
 
 .contact-me h3 {
