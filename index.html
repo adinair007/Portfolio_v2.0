@@ -20,18 +20,51 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <nav
+        class="navbar navbar-expand-sm"
+        style="background-color: black; color: aliceblue"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand Aditya" href="#home">Aditya Nair</a>
-          <ul class="navbar-nav nav-links">
+          <ul class="navbar-nav nav-links text-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#about-me">About Me</a>
+              <a
+                class="nav-link active text-center"
+                style="color: aliceblue"
+                href="#about-me"
+                >About Me</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#projects">Projects</a>
+              <a
+                class="nav-link active text-center"
+                style="color: aliceblue"
+                href="#education"
+                >Education</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#contact-me">Contact Me</a>
+              <a
+                class="nav-link active text-center"
+                style="color: aliceblue"
+                href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-center"
+                style="color: aliceblue"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-center"
+                style="color: aliceblue"
+                href="#contact-me"
+                >Contact Me</a
+              >
             </li>
             <!-- <li>
                     <a href="#Resume">Resume</a>
@@ -42,12 +75,14 @@
     </header>
 
     <section class="hero container-fluid" id="home">
-      <div class="hero-header hidden-welcome">
-        <h1 class="welcome text-center"><i>Welcome</i></h1>
+      <div class="hero-header hidden-title">
+        <h1 class="Aditya text-center"><b>ADITYA NAIR</b></h1>
+        <h3 class="title text-center"><i>Full-Stack Developer</i></h3>
       </div>
     </section>
 
     <main>
+      <!-- About Me Section -->
       <section id="about-me" class="about-me hidden container">
         <div class="post-heading text-center">
           <h3 class="display-4 font-weight-bold"><b>About Me</b></h3>
@@ -57,12 +92,81 @@
         <p>
           Hey! I'm Aditya and I am an upcoming full-stack developer. I'm from
           Fort Worth, TX with a Bachelors in Automotive Engineering. I got into
-          web design when looking for a career change and haven't looked back
-          since. I am well versed in HTML, CSS and JavaScript; and am currently
-          enrolled in a full-stack bootcamp with SMU. I look forward to working
-          with you!
+          web development when looking for a career change and haven't looked
+          back since. I am well versed in HTML, CSS and JavaScript; and am
+          currently enrolled in a full-stack bootcamp with SMU. I look forward
+          to working with you!
         </p>
       </section>
+
+      <!-- Education Section -->
+      <section id="education" class="education hidden container">
+        <div class="post-heading text-center">
+          <h3 class="display-4 font-weight-bold"><b>Education</b></h3>
+          <hr class="w-50 mx-auto pb-0.9" />
+        </div>
+        <div class="education-body">
+          <!-- Education 1 -->
+          <div class="card">
+            <div class="card-header">
+              <h4>
+                Southern Methodist University
+                <span class="years">2022-2023</span>
+              </h4>
+            </div>
+            <div class="education-title card-content">
+              <p>Full-Stack Flex Bootcamp Certificate</p>
+            </div>
+          </div>
+          <!-- Education 2-->
+          <div class="card">
+            <div class="card-header">
+              <h4>Purdue University <span class="years">2021</span></h4>
+            </div>
+            <div class="education-title card-content">
+              <p>Lean Six Sigma Green Belt</p>
+            </div>
+          </div>
+          <!-- Education 3 -->
+          <div class="card">
+            <div class="card-header">
+              <h4>
+                Manipal Institute of Technology
+                <span class="years">2016-2020</span>
+              </h4>
+            </div>
+            <div class="education-title card-content">
+              <p>B-Tech Automotive Engineering</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills hidden container">
+        <div class="post-heading text-center">
+          <h3 class="display-4 font-weight-bold"><b>Skills</b></h3>
+          <hr class="w-50 mx-auto pb-0.9" />
+        </div>
+        <div class="content-body text-center">
+          <ul class="ul-skills">
+            <li class="li-skills">HTML</li>
+            <li class="li-skills">CSS</li>
+            <li class="li-skills">Bootstrap</li>
+            <li class="li-skills">Javascript</li>
+            <li class="li-skills">Web APIs</li>
+            <li class="li-skills">Third-Party APIs</li>
+            <li class="li-skills">JQuery</li>
+            <li class="li-skills">Server-side APIs</li>
+            <li class="li-skills">NodeJs</li>
+            <li class="li-skills">NPM</li>
+            <li class="li-skills">Object-Oriented Programming</li>
+            <li class="li-skills">Git and Command Line</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
       <section id="projects" class="projects hidden container-fluid mt-3 mb-5">
         <div class="post-heading text-center">
           <h3 class="display-4 font-weight-bold"><b>Projects</b></h3>
@@ -96,7 +200,8 @@
                   >
                   <a
                     href="https://github.com/adinair007/My-Favorite_Crypto"
-                    class="btn btn-light" style="background-color: rgb(123, 9, 151);color: white"
+                    class="btn btn-light"
+                    style="background-color: rgb(123, 9, 151); color: white"
                     >Github</a
                   >
                 </div>
@@ -122,17 +227,17 @@
                   >
                   <a
                     href="https://github.com/adinair007/Weather_Dashboard"
-                    class="btn btn-light" style="background-color: rgb(123, 9, 151);color: white"
+                    class="btn btn-light"
+                    style="background-color: rgb(123, 9, 151); color: white"
                     >Github</a
                   >
                 </div>
               </div>
             </div>
-
             <!-- card 3 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
-                class=" work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
+                class="work card mx-auto shadow p-3 mb-5 bg-white rounded hidden"
                 style="width: 20rem"
               >
                 <img src="./assets/images/Workday.png" class="card-img-top" />
@@ -149,13 +254,13 @@
                   >
                   <a
                     href="https://github.com/adinair007/Work-Day_Scheduler"
-                    class="btn btn-light" style="background-color: rgb(123, 9, 151);color: white"
+                    class="btn btn-light"
+                    style="background-color: rgb(123, 9, 151); color: white"
                     >Github</a
                   >
                 </div>
               </div>
             </div>
-
             <!-- card 4 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
@@ -176,13 +281,13 @@
                   >
                   <a
                     href="https://github.com/adinair007/PasswordGenerator-Challenge3"
-                    class="btn btn-light" style="background-color: rgb(123, 9, 151);color: white"
+                    class="btn btn-light"
+                    style="background-color: rgb(123, 9, 151); color: white"
                     >Github</a
                   >
                 </div>
               </div>
             </div>
-
             <!-- card 5 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
@@ -200,13 +305,13 @@
                   </p>
                   <a
                     href="https://github.com/adinair007/README_Generator"
-                    class="btn btn-light" style="background-color: rgb(123, 9, 151);color: white"
+                    class="btn btn-light"
+                    style="background-color: rgb(123, 9, 151); color: white"
                     >Github</a
                   >
                 </div>
               </div>
             </div>
-
             <!-- card 6 -->
             <div class="col-lg-4 col-md-6 col-12 pb-2">
               <div
@@ -226,7 +331,8 @@
                   >
                   <a
                     href="https://github.com/adinair007/JavaScript-Quiz"
-                    class="btn btn-light" style="background-color: rgb(123, 9, 151);color: white"
+                    class="btn btn-light"
+                    style="background-color: rgb(123, 9, 151); color: white"
                     >Github</a
                   >
                 </div>
@@ -237,11 +343,16 @@
         </div>
       </section>
 
-      <section id="contact-me" class="contact-me hidden container fluid mt-3 mb-5">
+      <!-- Contact-Me Section -->
+      <section
+        id="contact-me"
+        class="contact-me hidden container fluid mt-3 mb-5"
+      >
         <div class="post-heading text center">
           <h3 class="display-4 font-weight-bold">Contact Me</h3>
           <hr class="w-50 mx-auto pb-0.9" />
           <p><i class="fa-solid fa-phone"></i>(469)-724-7966</p>
+          <!-- Icons -->
           <div class="icons container-fluid">
             <a href="https://github.com/adinair007">
               <i class="fab fa-github btn fa-2x center"></i>

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins&family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Caveat:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
 
 li {
   list-style: none;
@@ -22,15 +21,15 @@ li {
   transition: all 300ms ease-in-out;
 }
 
-.Aditya {
-  font-family: "Caveat",cursive;
-  font-size: 30px;
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
 }
-
 .nav-links {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  justify-content: space-between;
 }
 
 .hero {
@@ -47,15 +46,31 @@ li {
   align-items: center;
 }
 
-.hidden-welcome {
+.hidden-title {
   opacity: 0;
   filter: blur(5px);
-  transition: all 3s;
+  transition: 3s;
 }
-.welcome {
+.Aditya {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   color: aliceblue;
+  font-weight: 300;
   font-size: 100px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  font-size: 35px;
+  font-weight: 300;
+  transition-delay: 1000ms;
 }
 
 .hidden {
@@ -102,12 +117,59 @@ li {
   transition-delay: 200ms;
 }
 
+.education{
+  padding: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-content {
+  padding: 0.25rem 1.25rem;
+  flex: 1 1 auto;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.card:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.card:nth-child(3){
+  transition-delay: 300ms;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Archivo", sans-serif;
+}
+.years {
+  float: right;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+}
+
 /* .projects {
   padding: 100px;
 } */
 
 .projects h3 {
-  padding: 10px;
+  padding: 30px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -116,6 +178,7 @@ li {
   align-items: center;
   justify-content: center;
   margin: 10px;
+  margin-top: 10px;
 }
 
 .projects.work:nth-child(2) {
@@ -136,6 +199,28 @@ li {
 .projects.work:hover {
   box-shadow: inset 0px 0px 8px rgb(77, 170, 237), 0 0 15px rgb(78, 144, 185);
 }
+
+.skills{
+  padding: 100px;
+}
+
+.ul-skills {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-skills {
+  display: inline-flex;
+  margin: 5px;
+  padding: 5px 10px;
+  color: white;
+  background: black;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+}
+
+
 .contact-me {
   padding: 50px;
   padding-top: 100px;
@@ -149,11 +234,16 @@ li {
   vertical-align: bottom;
 }
 
+.contact-me{
+  padding: 100px;
+}
+
 .contact-me h3 {
   padding: 10px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
+
 .contact-me p {
   padding: 10px;
   text-align: center;
@@ -169,6 +259,8 @@ li {
 .far.fa-envelope.btn.btn:hover {
   color: rgb(57, 137, 241);
 }
+
+
 .footer {
   padding: 30px;
   font-family: "Montserrat";
@@ -188,6 +280,8 @@ li {
 .scroll-up .navbar {
   filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
+
+
 
 @media screen and (max-device-width: 480px) {
   header {
