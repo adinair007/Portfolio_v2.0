@@ -65,12 +65,23 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
   font-family: "Raleway", sans-serif;
   color: aliceblue;
   font-size: 35px;
   font-weight: 300;
   transition-delay: 1000ms;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  font-size: 15px;
+  font-weight: 300;
+  transition-delay: 2000ms;
 }
 
 .hidden {
